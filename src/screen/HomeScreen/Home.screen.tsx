@@ -1,8 +1,12 @@
-import React from 'react'
-import { Text } from 'react-native'
+import React from 'react';
+import {Text, View} from 'react-native';
+import Topbar from '../../component/Topbar/Topbar';
 
 export default function HomeScreen() {
   return (
-    <Text>This is my home component</Text>
-  )
+    <View style={{flex: 1}}>
+      <Topbar/>
+      <Text>This is my home component</Text>
+    </View>
+  );
 }
